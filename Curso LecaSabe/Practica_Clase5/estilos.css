@@ -1,0 +1,21 @@
+body {
+    background-color: bisque;
+}
+
+h1 {
+    text-align: center;
+    color: blueviolet;
+    font-size: 50px;
+    text-decoration: underline;
+}
+
+#texto1 {
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.parrafos {
+    text-align: justify;
+    color: green;
+    font-size: 34px;
+}

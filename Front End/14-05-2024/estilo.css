@@ -1,0 +1,42 @@
+#menu {
+    width: 80%;
+    margin: auto;
+}
+
+/*
+La propiedad "width" con el valor "80%" lo que hace es que ocupe siempre el 80% del tamaño de la ventana
+La propiedad "margin" con el valor "auto" lo que hace es centralizar
+*/
+
+#a,#b,#c,#d{
+    width: 25%;
+    float: left;
+}
+
+/*
+La propiedad "float" con el valor "left" hace flotar el div hacia la izquierda
+*/
+
+#a{
+    background-color:aqua;
+    font-size: 100px;
+    text-align: center;
+}
+
+#b{
+    background-color: orange;
+    font-size: 75px;
+    text-align: center;
+}
+
+#c{
+    background-color: red;
+    font-size: 50px;
+    text-align: center;
+}
+
+#d{
+    background-color: violet;
+    font-size: 25px;
+    text-align: center;
+}

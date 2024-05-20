@@ -1,0 +1,92 @@
+#menu {
+    width: 90%;
+    margin: auto;
+}
+
+#encabezado {
+    padding: 50px;
+    text-align: center;
+    background-color: gray;
+}
+
+#a,#b,#c,#d,#e {
+    width: 20%;
+    float: left;
+}
+
+#a {
+    background-color: red;
+    text-align: center;
+}
+
+#b {
+    background-color: orange;
+    text-align: center;
+}
+
+#c {
+    background-color: yellow;
+    text-align: center;
+}
+
+#d {
+    background-color: yellowgreen;
+    text-align: center;
+}
+
+#e {
+    background-color: green;
+    text-align: center;
+}
+
+#información {
+    width: 60%;
+    margin: auto;
+    float: left;
+}
+
+#links {
+    width: 40%;
+    margin: auto;
+    float: left;
+}
+
+#Encabezado-inf {
+    color: red;
+}
+
+#Texto-inf {
+    color: orange;
+    font-size: 13px;
+}
+
+#Titulo-referencias {
+    color: red;
+    font-size: 18px;
+}
+
+#Referencias {
+    color: orange;
+    font-size: 17px;
+}
+
+a {
+    color: orange;
+    text-decoration: none;
+}
+
+a:hover {
+    color: green;
+    font-size: 17px;
+}
+
+#Diseñado {
+    padding-top: 50px;
+    padding-bottom: 50px;
+    margin: auto;
+    width: 90%;
+    clear: both;
+    text-align: center;
+    font-size: 30px;
+    background-color: gray;
+}

@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+    <html lang="en">
+        <title>Contacto MedicinaUruguaya</title>
+        <meta charset="utf-8"> <!--Codification-->
+        <meta name="viewport" content="width=device-width">
+        <style>
+            body {
+                background: rgb(187, 228, 255);
+            }
+        </style>
+        <header>
+        <body>
+            <table align="center" width="900">
+                <tr>
+                    <td colspan="3"><img alt="Banner" title="Banner" src="Imagenes/Medico Banner.jpg" width="900"></td>
+                </tr>
+                <section>
+                    <tr>
+                        <th><a href="Index.html">Inicio</a></th>
+                        <th><a href="Servicios.html">Servicios</a></th> <!--Navigation-->
+                        <th><a href="Contacto.html">Contacto</a></th>
+                    </tr>
+                    <tr>
+                        <td colspan="3"><h1>Metodos de contacto</h1></td>
+                    </tr>
+                    <tr>
+                        <td colspan="3"><p>Si desea contactarnos por dudas puede mandar un mail a esta dirección: MedicinaUruguaya@hotmail.com (favor de dejar datos de su persona o lo que solicite la atención del hospital), lo llamaremos a la brevedad.</p></td>
+                    </tr>
+                    <tr>
+                        <td colspan="3"><p>Si quiere agendar para una consulta o cita con algun doctor deje un mail a esta dirección: MedicinaUruguaya@hotmail.com (favor de dejar datos de su persona o lo que solicite la atención del hospital), lo llamaremos a la brevedad.</p></td>
+                    </tr>
+                    <tr>
+                        <td><img alt="Foto de Referencia" title="Foto de Referencia" src="Imagenes/Medico10.jpeg" width="295"></td>
+                        <td><img alt="Foto de Referencia" title="Foto de Referencia" src="Imagenes/Medico8.jpg" width="275"></td>
+                        <td><img alt="Foto de Referencia" title="Foto de Referencia" src="Imagenes/Medico9.jpg" width="300"></td>
+                    </tr>
+                </section>
+                <section>
+                    <tr>
+                        <td><h2 id="contacto">Formulario de contacto</h2></td>
+                    </tr>
+                    <tr>
+                        <td><form method="post" action="/">
+                        <fieldset>
+                            <legend>Información Personal</legend>
+    
+                            <div>
+                                <label>Nombre:
+                                    <input 
+                                        autocomplete="username"
+                                        type="text"
+                                        id="name" name="name"
+                                        placeholder="Leonardo Javier Hernandez" required>
+                                </label>
+                            </div>
+                            <div>
+                                <label>Email:
+                                    <input 
+                                        autocomplete="email"
+                                        type="email"
+                                        name="email"
+                                        placeholder="RobertoGimenez@hotmail.com" required>
+                                </label>
+                            </div>
+                        </fieldset>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                        <fieldset>
+                            <legend>Número Telefonico</legend>
+    
+                            <div>
+                                <label>Teléfono:
+                                    <input 
+                                        autocomplete="tel"
+                                        type="tel" 
+                                        name="phone"
+                                        placeholder="094578345" required pattern="[0-9]{9}">
+                                </label>
+                            </div>
+                        </fieldset>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td colspan="1">    
+                        <fieldset>
+                            <legend>Otros</legend>
+    
+                            <div>
+                                <label for="why">¿Por qué quieres contactar?</label>
+                                <select name="why" id="why">
+                                    <option value="1">Duda</option>
+                                    <option value="2">Agendar Cita</option>
+                                </select>
+                            </div>
+    
+                        <input type="submit" value="Enviar contacto">
+                    </form>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td><h2>Diseño por: Luca Villaverde</h2></td>
+                    </tr>
+                </section>
+            </table>
+        </body>
+    </html>
