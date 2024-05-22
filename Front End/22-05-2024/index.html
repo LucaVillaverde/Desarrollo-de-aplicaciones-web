@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario</title>
+    <link href="estilo.css" rel="stylesheet" type="text/css">
+
+</head>
+<body>
+
+    <div id="menu">
+        <form method="post" action="validar.php">
+
+            <input type="text" name="nombre" id="nombre" value="1er y/o 2do Nombre" placeholder="Leonardo Javier"> /////
+            <input type="text" name="apellido" id="apellido" value="1er y 2do Apellido" placeholder="Villaverde Giles">
+            <br> <br>
+            <select name="pais" id="pais">
+                <option>País</option>
+                <option value="UY">Uruguay</option>
+                <option value="AR">Argentina</option>
+                <option value="PY">Paraguay</option>
+                <option value="CL">Chile</option>
+                <option value="MÉX">México</option>
+                <option value="Bol">Bolivia</option>
+            </select> /////
+            <input type="tel" name="telefono" id="telefono" placeholder="095343837" value="Numero de Telefono">
+            <br> <br>
+            <input type="email" name="email" id="email" placeholder="LucaVilla2017@hotmail.com" value="Correo Electronico"> /////
+            Contraseña: <input type="password" name="password" id="password" placeholder="Contraseña" value="password">
+            <br>
+            <p>Color Favorito:</p>
+            <input type="radio" name="Color Favorito" id="Color Favorito1" value="1"> Rojo
+            <input type="radio" name="Color Favorito" id="Color Favorito2" value="2"> Verde
+            <input type="radio" name="Color Favorito" id="Color Favorito3" value="3"> Azul
+            <input type="radio" name="Color Favorito" id="Color Favorito0" value="0"> No Corresponde
+
+            <br><br>
+            Aceptar Terminos y Condiciones:<br> <br>
+            <input type="radio" name="TerminosSelect" id="Terminos y Condiciones Si"> Si
+            <input type="radio" name="TerminosSelect" id="Terminos y Condiciones No"> No
+            <br> <br>
+            <input type="submit" value="Ingresar Datos" name="Ingresar" id="Ingresar"> /////
+            <input type="reset" value="Cancelar" name="Cancelar" id="Cancelar">
+
+        </form>
+    </div>
+
+</body>
+</html>

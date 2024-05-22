@@ -1,0 +1,24 @@
+#menu {
+    width: 90%;
+    height: 100%;
+    margin: auto;
+    text-align: center;
+}
+
+input[type=text] {
+    border: dotted 3px blue;
+}
+
+#pais, input[type=tel] {
+    border: dotted 4px red;
+    border-radius: 10px;
+}
+
+#email, #password {
+    border: dashed 3px black;
+}
+
+input[type=radio] {
+    width: 20px;
+    height: 20px;
+}
