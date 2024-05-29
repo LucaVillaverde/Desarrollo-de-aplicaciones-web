@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Estructuras de control</title>
+</head>
+<body>
+
+    <h1>Estructuras Selectivas</h1>
+
+    <script>
+
+        //Selectiva simple: Solo evalua si la condicion se cumple.
+        let x = 3;
+        /*if(x >= 3){
+            alert("X es mayor o igual a 3");
+        }*/
+        
+        //Selectiva doble: evalua si se cumple y si no se cumpla la condicion.
+        let a = 120;
+        /*if(a == 12 || x > 0){
+            alert("Es 12");
+        }else{
+            alert("No es 12");
+        }*/
+
+
+        //Selectiva multiple: evalua mas de 2 opciones de condiciones posibles.
+        /*if(a>=0 && a < 20){
+            alert("1er nivel");
+        }else if (a >= 20 && a < 100){
+            alert("2do nivel");
+        }else if (a >= 100 && a < 150){
+            alert("3er nivel");
+        }else{
+            alert("no corresponde el valor");
+        }*/
+
+        //Selectiva multiple con siwtch
+        let dia = prompt("ingrese un dia de la semana");
+        switch(dia){ //nombre de la variable a evaluar
+
+            case "Lunes": //valor posible
+                alert("dia de milanesas");
+            break;
+            
+            case "Martes":
+                alert("dia de papas fritas")
+            break;
+
+            case "Miercoles":
+                alert("ensalada de verdes");
+            break;
+
+            default: //por defecto (else)
+                alert("Esta Cerrado");
+            break;
+
+        }
+
+    </script>
+
+</body>
+</html>
