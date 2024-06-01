@@ -5,7 +5,12 @@ const persona = {
     casado: false,
     trabajo: "Desempleado",
     evadeImpuestos: "Siempre",
+    fullName: function () {
+        return this.nombre + this.apellido;
+    }
 }
+
+alert(persona.fullName);
 
 let p = JSON.stringify(persona);
 
