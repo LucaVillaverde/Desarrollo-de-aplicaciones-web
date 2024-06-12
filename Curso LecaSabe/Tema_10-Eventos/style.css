@@ -1,0 +1,22 @@
+#caja{
+    width: 50%;
+    border: dotted 5px yellow;
+    padding: 50px;
+    margin: auto;
+    text-align: center;
+}
+
+#mod2{
+    text-align: center;
+    margin: auto;
+    margin-top: 30px;
+    text-decoration: underline;
+}
+
+.botonFase1{
+    display: block;
+}
+
+.oculto{
+    display: none;
+}
