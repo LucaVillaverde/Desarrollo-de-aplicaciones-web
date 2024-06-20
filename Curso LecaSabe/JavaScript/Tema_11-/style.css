@@ -1,0 +1,71 @@
+#contenedorCalculadora{
+    width: 50%;
+    height: 420px;
+    margin: auto;
+    border: solid 4px #000;
+}
+
+#displayContainer{
+    width: 90%;
+    margin: auto;
+}
+
+#displayContainer,#display{
+    height: 30px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+#display{
+    width: 100%;
+    margin: auto;
+    text-align: right;
+}
+
+.borrarContenedor{
+    width: 100%;
+    height: 50px;
+}
+
+.borrarButton{
+    width: 24%;
+    height: 50px;
+    margin: auto;
+    float: right;
+    margin-right: 0.7%;
+}
+
+#contenedorInputs{
+    width: 100%;
+    height: 100%;
+}
+
+.espacios4 {
+    width: 24%;
+    height: auto;
+    margin: auto;
+    float: left;
+    margin: 0.5%;
+}
+
+.espacios3{
+    width: 24%;
+    height: auto;
+    margin: auto;
+    float: left;
+    margin: 0.5%;
+}
+
+.espacios4,.espacios3{
+    height: 50px;
+    margin-top: 20px;
+}
+
+.number{
+    width: 100%;
+    height: 100%;
+}
+
+#boton0{
+    width: 49%;
+}

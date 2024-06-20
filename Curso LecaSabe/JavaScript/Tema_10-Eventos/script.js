@@ -33,6 +33,3 @@ function header(){
     }
 }
 
-mod1.addEventListener("click", header()
-    }
-)
