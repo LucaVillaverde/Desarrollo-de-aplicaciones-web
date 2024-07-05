@@ -1,3 +1,12 @@
+function loading(){
+    var loader = document.getElementById("contLoader");
+    loader.classList.add("ocultar");
+    console.log("función loading funciona bien.")
+}
+
+window.addEventListener("load", loading);
+
+    
     // Función para cambiar el tamaño de la fuente
     function cambiarTamaño(tamaño) {
         // Obtener el elemento body
