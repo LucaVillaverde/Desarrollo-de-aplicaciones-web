@@ -1,7 +1,25 @@
-.texto1em{
-    font-size: 1em;
+.default{
+    font-size: 16px;
 }
 
-.texto2em{
-    font-size: 2em;
+.texto-chico {
+    font-size: 14px;
+}
+
+.texto-mediano {
+    font-size: 18px;
+}
+
+.texto-grande {
+    font-size: 24px;
+}
+
+.oscuro {
+    background-color: black;
+    color: white;
+}
+
+.claro {
+    background-color: white;
+    color: black;
 }

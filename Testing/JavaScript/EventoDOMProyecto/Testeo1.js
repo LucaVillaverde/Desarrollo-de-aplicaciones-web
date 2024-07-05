@@ -1,23 +1,45 @@
-const btton1 = document.getElementById("1em");
-const btton2 = document.getElementById("2em");
+    // Función para cambiar el tamaño de la fuente
+    function cambiarTamaño(tamaño) {
+        // Obtener el elemento body
+        var body = document.body;
 
-btton1.addEventListener("click", unoEm);
-btton2.addEventListener("click", dosEm);
+        // Eliminar todas las clases de tamaño de texto
+        body.classList.remove('texto-chico', 'texto-mediano', 'texto-grande', 'default');
 
-function unoEm(){
-    let texto = document.getElementsByClassName("texto1em");
-    if(texto.classname === "texto2em"){
-        window.alert("se llama adecuadamente(unoEm)")
-        texto.classname = "texto1em";
+        // Agregar la clase correspondiente al tamaño seleccionado
+        body.classList.add(tamaño);
     }
+
+    // Event listeners para los botones tipo radio
+    document.getElementById('tam-chico').addEventListener('change', function() {
+        cambiarTamaño('texto-chico');
+    });
+
+    document.getElementById('tam-mediano').addEventListener('change', function() {
+        cambiarTamaño('texto-mediano');
+    });
+
+    document.getElementById('tam-grande').addEventListener('change', function() {
+        cambiarTamaño('texto-grande');
+    });
+
+    document.getElementById('default').addEventListener('change', function() {
+        cambiarTamaño('default')
+    })
+
+
+function cambiarTema(tema){
+    var body = document.body;
+
+    body.classList.remove('oscuro', 'claro');
+
+    body.classList.add(tema);
 }
 
-function dosEm(){
-    let texto = document.getElementsByClassName("texto2em");
+document.getElementById('oscuro').addEventListener('change' , function() {
+    cambiarTema('oscuro');
+});
 
-    
-    if(texto.classname === "texto1em"){
-        window.alert("Se llama adecuadamente(dosEm)");
-        texto.classname = "texto2em";
-    }
-}
+document.getElementById('claro').addEventListener('change' , function() {
+    cambiarTema('claro');
+});
