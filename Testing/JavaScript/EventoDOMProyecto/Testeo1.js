@@ -1,11 +1,10 @@
 var loader = document.getElementById("contLoader");
 function loading(){
     console.log("función loading funciona bien.");
-    setTimeout(timer, 1000);
+    setTimeout(timer, 2000);
 }
 
 function timer(){
-    window.alert("Quitando icono de carga");
     loader.classList.add("ocultar");
 }
 
