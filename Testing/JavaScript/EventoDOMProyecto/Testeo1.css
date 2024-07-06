@@ -15,7 +15,7 @@
 }
 
 .oscuro {
-    background-color: black;
+    background-color: #010015;
     color: white;
 }
 
@@ -27,6 +27,15 @@
 .ocultar{
     display: none !important;
 }
+
+.mostrarTexto{
+  display: block;
+}
+
+.ocultarTexto{
+  display: none;
+}
+
 
 #contLoader{
     width: 100vw;

@@ -1,7 +1,7 @@
 var loader = document.getElementById("contLoader");
 function loading(){
     console.log("función loading funciona bien.");
-    setTimeout(timer, 2000);
+    setTimeout(timer, 3000);
 }
 
 function timer(){
@@ -9,6 +9,13 @@ function timer(){
 }
 
 window.addEventListener("load", loading);
+
+function traductor(idioma){
+    var textoEspañol = document.getElementsByClassName("mostrarTexto");
+    var textoEnglish = document.getElementsByClassName("ocultarTexto");
+}
+
+document.getElementById("mostrarTexto").addEventListener()
 
     
     // Función para cambiar el tamaño de la fuente
