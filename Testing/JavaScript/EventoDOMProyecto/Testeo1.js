@@ -1,7 +1,12 @@
+var loader = document.getElementById("contLoader");
 function loading(){
-    var loader = document.getElementById("contLoader");
+    console.log("función loading funciona bien.");
+    setTimeout(timer, 1000);
+}
+
+function timer(){
+    window.alert("Quitando icono de carga");
     loader.classList.add("ocultar");
-    console.log("función loading funciona bien.")
 }
 
 window.addEventListener("load", loading);
