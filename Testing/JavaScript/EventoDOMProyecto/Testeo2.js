@@ -29,7 +29,7 @@ function showSlides(n) {
   dots[slideIndex-1].className += " active";
 }
 
-
+/*
 function carruselAutomatico(){
   let slides = document.getElementsByClassName("mySlides");
   let dots = document.getElementsByClassName("dot");
@@ -45,4 +45,8 @@ function carruselAutomatico(){
   dots[slideIndex-1].className += " active";
   timer = setTimeout(carruselAutomatico, 6000);
 }
+*/
 
+const estrellas = document.getElementsByClassName("estrella");
+
+estrellasInput.disabled = true;

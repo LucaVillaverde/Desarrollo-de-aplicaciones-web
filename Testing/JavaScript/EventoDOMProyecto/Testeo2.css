@@ -4,6 +4,7 @@
     margin: auto;
     margin-left: 15px;
     margin-right: 15px;
+    margin-top: 40px;
   }
   
   /* Slideshow images */
@@ -20,6 +21,10 @@
     background-size: cover;
   }
   
+  .pc{
+    display: none;
+  }
+
   
   /* Hide the images by default */
   .mySlides {
@@ -70,16 +75,7 @@
     border: solid 2px;
     border-color: #000;
   }
-  
-  /* Number text (1/3 etc) */
-  .numbertext {
-    color: #f2f2f2;
-    font-size: 12px;
-    padding: 8px 12px;
-    position: absolute;
-    top: 0;
-  }
-  
+
   .mySlides-Imagen{
     border-radius: 15px;
   }
@@ -172,6 +168,10 @@
     margin: auto;
     background-color: #fff3;
     border-radius: 1em;
+    background-image: url(jjj.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
   }
   
   .img svg {
@@ -204,6 +204,11 @@
   .separadorDots{
     margin-top: 40px;
   }
+
+  .j p{
+    font-size: 10px;
+  }
+
   /**
  * ----------------------------------------
  * animation fade-in-top
@@ -238,3 +243,9 @@
       opacity: 1;
     }
   }
+
+@media (min-width: 768px) {
+  .pc{
+    display: block;
+  }
+}  
