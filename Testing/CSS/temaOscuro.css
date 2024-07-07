@@ -1,0 +1,31 @@
+@import url('https://fonts.googleapis.com/css?family=Montserrat');
+html, body {
+  height: 100%;
+}
+
+h1 {
+font-size: 3rem;
+}
+
+body {
+font-family: 'Montserrat';
+font-size: 1.2rem;
+text-align:center;  display: flex;
+justify-content: center;
+align-items: center;
+height: 100%;
+background: lightgrey;
+}
+
+
+
+
+@media (prefers-color-scheme: dark) {
+  .body.dark-scheme {
+      height: 100%;
+
+
+  background: black;
+  color: white;
+}
+}

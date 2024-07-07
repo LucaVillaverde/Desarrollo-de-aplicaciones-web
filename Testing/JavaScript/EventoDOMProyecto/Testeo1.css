@@ -15,7 +15,8 @@
 }
 
 .oscuro {
-    background-color: #2f2f2f;
+    background-color: #1B1919;
+    /* background-color: #0B0A29; */
     color: white;
 }
 
@@ -129,4 +130,11 @@
     to {
       transform: rotateX(70deg) rotateZ(630deg);
     }
+  }
+
+  @media (prefers-color-scheme: dark) {
+    .dark-scheme {
+      background-color: #1B1919;
+      color: white;
+  }
   }

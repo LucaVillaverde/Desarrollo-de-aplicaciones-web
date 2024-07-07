@@ -44,7 +44,7 @@ window.addEventListener("load", loading);
 function cambiarTema(tema){
     var body = document.body;
 
-    body.classList.remove('oscuro', 'claro');
+    body.classList.remove('oscuro', 'claro', 'dark-scheme');
 
     body.classList.add(tema);
 }
@@ -55,4 +55,8 @@ document.getElementById('oscuro').addEventListener('change' , function() {
 
 document.getElementById('claro').addEventListener('change' , function() {
     cambiarTema('claro');
+});
+
+document.getElementById('navegador').addEventListener('change', function(){
+    cambiarTema('dark-scheme');
 });
