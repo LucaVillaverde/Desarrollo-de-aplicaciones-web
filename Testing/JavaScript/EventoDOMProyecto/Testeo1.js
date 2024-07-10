@@ -11,16 +11,20 @@ function timer(){
 window.addEventListener("load", loading);
 
     
-    // Función para cambiar el tamaño de la fuente
+    // // Función para cambiar el tamaño de la fuente
     function cambiarTamaño(tamaño) {
-        // Obtener el elemento body
-        var body = document.body;
-
-        // Eliminar todas las clases de tamaño de texto
-        body.classList.remove('texto-chico', 'texto-mediano', 'texto-grande', 'default');
-
-        // Agregar la clase correspondiente al tamaño seleccionado
-        body.classList.add(tamaño);
+        // Obtener los elementos <p>, <h1>, <h2>, <h3>, <h4>, <h5>, <h6>
+        const elementsToStyle = document.querySelectorAll('p, h1, h2, h3, h4, h5, h6, label');
+    
+        elementsToStyle.forEach(element => {
+            // Verificar que el elemento no sea un <a>
+            if (element.tagName.toLowerCase() !== 'a') {
+                // Eliminar todas las clases de tamaño existentes
+                element.classList.remove('texto-chico', 'texto-mediano', 'texto-grande', 'default');
+                // Agregar la clase de tamaño deseada
+                element.classList.add(tamaño);
+            }
+        });
     }
 
     // Event listeners para los botones tipo radio
