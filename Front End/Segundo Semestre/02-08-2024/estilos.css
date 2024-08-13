@@ -1,0 +1,62 @@
+/*
+Primero para celulares con un ancho de 320px
+*/
+
+#contP{
+    width: 100%;
+    height: 900px;
+}
+
+header{
+    display: grid;
+    grid-template-columns: 100px 100px;
+    justify-content: space-between;
+    background-color: black;
+}
+
+#logoContenedor{
+    width: 100px;
+}
+
+#logoImagen{
+    width: 100%;
+}
+
+#registrarme, #logearme{
+    color: #ff1a74;
+    text-decoration: none;
+}
+
+#logearme{
+    display: block;
+    text-align: center;
+    margin-top: 4px;
+}
+
+#registrarme{
+    display: block;
+    text-align: center;
+    margin-top: 10px;
+}
+
+#carritoContenedor{
+    width: 38px;
+    height: 38px;
+    border-radius: 50%;
+    background-color: #ff1a74;
+    display: block;
+    position: fixed;
+    z-index: 2;
+    top: 90px;
+    left: 274px;
+}
+
+#carritoImagen{
+    display: block;
+    margin: auto;
+    margin-top: 2px;
+}
+
+#carritoContenedor:hover{
+    cursor: pointer;
+}
