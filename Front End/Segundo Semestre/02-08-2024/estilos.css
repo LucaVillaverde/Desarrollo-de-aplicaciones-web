@@ -1,128 +1,62 @@
-body{
-    background-color: darkgrey;
-    height: 1000px;
-}
+/*
+Primero para celulares con un ancho de 320px
+*/
 
-.separadorSeccion{
+#contP{
     width: 100%;
-    height: 60px;
+    height: 900px;
 }
 
 header{
-    width: 100%;
-    height: 48px;
-    position: fixed;
-    top: 4;
-    left: 0;
+    display: grid;
+    grid-template-columns: 100px 100px;
+    justify-content: space-between;
+    background-color: black;
 }
 
 #logoContenedor{
-    width: 30vw;
-    height: auto;
-    float: left;
-}
-
-#logo_Menu{
-    width: 100%;
-    height: 52px;
+    width: 100px;
 }
 
 #logoImagen{
     width: 100%;
-    height: auto;
 }
 
-#separador{
-    display: block;
-}
-
-#loginC{
-    margin-top: 3%;
-    margin-left: 4.5%;
-}
-
-
-.displayAncNone {
-    display: none;
-    animation: linksSalida 1s ease-in 0s 1 normal forwards;
-}
-
-.displayAncBlock {
-    display: block;
-    background-color: #b90d2e;
-    animation: linksEntrada 1s ease-in 0s 1 normal forwards;
-}
-
-.item {
-    display: block;
-    color: #f2f2f2;
-    background: #1a17e4f9;
-    border-radius: 4px;
-    text-align: center;
-    padding: 14px;
+#registrarme, #logearme{
+    color: #ff1a74;
     text-decoration: none;
-    font-size: 17px;
-    margin-bottom: 2%;
-    background-color: #ed143d;
 }
 
-#aInicio{
-    margin-top: 2%;
-}
-nav{
+#logearme{
     display: block;
+    text-align: center;
+    margin-top: 4px;
 }
 
-.hamburger-menu {
-    height: 3vh;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    margin-top: 5.7%;
-    margin-right: 7%;
-    margin-left: -45%;
-    transform: rotate(0deg);
-    transition: 1s;
-    float: right;
+#registrarme{
+    display: block;
+    text-align: center;
+    margin-top: 10px;
 }
 
-.line {
-    width: 25px;
-    height: 3px;
-    background-color: #f2f2f2;
+#carritoContenedor{
+    width: 38px;
+    height: 38px;
+    border-radius: 50%;
+    background-color: #ff1a74;
+    display: block;
+    position: fixed;
+    z-index: 2;
+    top: 90px;
+    left: 274px;
 }
 
-.rotateHamb{
-    transform: rotate(90deg);
-    transition: 1s;
+#carritoImagen{
+    display: block;
+    margin: auto;
+    margin-top: 2px;
 }
 
-@media (min-width: 768px){
-    .hamburger-menu {
-        display: none;
-    }
-}
-
-@keyframes linksEntrada {
-	0% {
-		opacity: 0;
-		transform: translateY(-50px);
-	}
-
-	100% {
-		opacity: 1;
-		transform: translateY(0);
-	}
-}
-
-@keyframes linksSalida {
-	0% {
-		opacity: 1;
-		transform: translateY(0);
-	}
-
-	100% {
-		opacity: 0;
-		transform: translateY(-50px);
-	}
+#carritoContenedor:hover{
+    cursor: pointer;
 }
