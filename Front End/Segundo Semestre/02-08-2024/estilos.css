@@ -48,7 +48,7 @@ header{
     position: fixed;
     z-index: 2;
     top: 90px;
-    left: 274px;
+    left: 270px;
 }
 
 #carritoImagen{
@@ -59,4 +59,96 @@ header{
 
 #carritoContenedor:hover{
     cursor: pointer;
+}
+
+#navigationButtonContainer{
+    position: absolute;
+    width: 32px;
+    height: 32px;
+    top: 19px;
+    left: 144px;
+    z-index: 4;
+}
+
+#navigationButton{
+    width: 100%;
+    height: 100%;
+}
+
+.navigationButton1{
+    transform: rotate(90deg);
+    transition: 1s;
+}
+
+.none{
+    transform: rotate(0deg);
+    transition: 1s;
+}
+
+#navigation{
+    display: grid;
+    position: fixed;
+    row-gap: 30px;
+    align-content: start;
+    width: 100%;
+    height: 100%;
+    left: 0;
+    top: 0;
+    z-index: 3;
+    background-color: rgba(0,0,0, 0.6);
+}
+
+#cat1{
+    margin-top: 27%;
+}
+
+.cat{
+    display: grid;
+    justify-content: center;
+    text-align: center;
+    align-content: center;
+    height: 50px;
+    width: 80%;
+    margin: auto;
+    background-color: #ff1a767b;
+    border-radius: 20%;
+}
+
+.default{
+    display: none !important;
+}
+
+.show{
+    display: grid !important;
+}
+
+@media (min-width: 375px) {
+    #carritoContenedor{
+        left: 325px;
+    }
+    #navigationButtonContainer{
+        left: 172px;
+    }
+}
+
+@media (min-width: 425px) {
+    #carritoContenedor{
+        left: 372px;
+    }
+    #navigationButtonContainer{
+        left: 200px;
+    }
+}
+
+@media (min-width: 768px) {
+    #carritoContenedor{
+        width: 50px;
+        height: 50px;
+        left: 690px;
+    }
+
+    #carritoImagen {
+        width: 42px;
+        margin-top: 4px;
+    }
 }
