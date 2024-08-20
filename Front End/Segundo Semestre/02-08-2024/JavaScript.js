@@ -1,22 +1,3 @@
-// var menuHamburguesa = document.getElementById("menu");
-// var linksNavBar = document.getElementById("myLinksAnchor");
-
-// function interaccionNavBar(){
-//     if (menuHamburguesa.className === "hamburger-menu"){
-//         menuHamburguesa.className += " rotateHamb";
-//     } else {
-//         menuHamburguesa.className = "hamburger-menu";
-//     }
-//     if (linksNavBar.className == "displayAncNone"){
-//         linksNavBar.className = "displayAncBlock";
-//     } else {
-//         linksNavBar.className = "displayAncNone"
-//     }
-// }
-
-// menuHamburguesa.addEventListener("click", function() {
-//     interaccionNavBar();
-// });
 
 // function desplegar(){
 //     let height = Porcentaje();
@@ -34,7 +15,7 @@
 //     // Cont padre
 //     const containerHeight = document.body.offsetHeight;
 //     // calcular porcentaje
-//     const overPercentage = (height /containerHeight) * 100;
+//     const overPercentage = (height / containerHeight) * 100;
 //     return overPercentage;
 // }
 
@@ -53,4 +34,35 @@ function menu(){
 
 buttonMenu.addEventListener("click", function(){
     menu();
+})
+
+
+const loginButton = document.getElementById("logearme");
+const registerButton = document.getElementById("registrarme");
+const menuLogin = document.getElementById("menuLogin");
+const menuRegister = document.getElementById("menuRegister");
+
+function loginMenu(){
+    if (menuLogin.className === "defaultL"){
+        menuLogin.className = "showL";
+    } else {
+        menuLogin.className = "defaultL";
+    }
+}
+
+function registerMenu(){
+    if (menuRegister.className === "defaultR"){
+        menuRegister.className = "showR";
+    } else {
+        menuRegister.className = "defaultR";
+    }
+}
+
+
+loginButton.addEventListener("click", function(){
+    loginMenu();
+})
+
+registerButton.addEventListener("click", function(){
+    registerMenu();
 })

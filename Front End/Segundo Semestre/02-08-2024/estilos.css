@@ -2,6 +2,11 @@
 Primero para celulares con un ancho de 320px
 */
 
+body{
+    margin: 0;
+    padding: 0;
+}
+
 #contP{
     width: 100%;
     height: 900px;
@@ -65,7 +70,7 @@ header{
     position: absolute;
     width: 32px;
     height: 32px;
-    top: 19px;
+    top: 13px;
     left: 144px;
     z-index: 4;
 }
@@ -88,7 +93,7 @@ header{
 #navigation{
     display: grid;
     position: fixed;
-    row-gap: 30px;
+    row-gap: 40px;
     align-content: start;
     width: 100%;
     height: 100%;
@@ -99,12 +104,10 @@ header{
 }
 
 #cat1{
-    margin-top: 27%;
+    margin-top: 50%;
 }
 
 .cat{
-    display: grid;
-    justify-content: center;
     text-align: center;
     align-content: center;
     height: 50px;
@@ -114,8 +117,12 @@ header{
     border-radius: 20%;
 }
 
-.default{
+.default,.defaultL,.defaultR{
     display: none !important;
+}
+
+.showL,.showR{
+    display: block;
 }
 
 .show{
@@ -129,6 +136,9 @@ header{
     #navigationButtonContainer{
         left: 172px;
     }
+    #cat1{
+        margin-top: 46%;
+    }
 }
 
 @media (min-width: 425px) {
@@ -138,7 +148,24 @@ header{
     #navigationButtonContainer{
         left: 200px;
     }
+    #cat1{
+        margin-top: 41%;
+    }
 }
+
+/* Adaptación para movil en horizontal */
+@media (min-width: 667px) {
+    #cat1,#cat2 {
+        margin-top: 35%;
+    }
+    #navigation{
+        grid-template-columns: repeat(2, 1fr);
+    }
+    #navigationButtonContainer{
+        left: 332px;
+    }
+}
+/*-------------------------------------*/
 
 @media (min-width: 768px) {
     #carritoContenedor{
