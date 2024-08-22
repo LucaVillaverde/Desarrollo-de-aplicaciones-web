@@ -14,14 +14,14 @@ function promedio(){
     let totalAlumnos = 0;
     datos.forEach (function(nota, nombre) {
         totalNota += parseInt(nota);
-        window.alert("Integrando la nota de " + nombre + " al promedio total");
+        console.log("Integrando la nota de " + nombre);
         totalAlumnos++;
     })
     promedioNotas = (totalNota / totalAlumnos);
 
-    window.alert("Cantidad de notas ingresadas = " + totalAlumnos);
-    window.alert("Suma total de todas las notas = " + totalNota);
-    window.alert("El promedio de las notas es = " + promedioNotas);
+    console.log("Cantidad de notas ingresadas = " + totalAlumnos);
+    console.log("Suma total de todas las notas = " + totalNota);
+    console.log("El promedio de las notas es = " + promedioNotas);
 }
 
 addButton.addEventListener("click", function(){
