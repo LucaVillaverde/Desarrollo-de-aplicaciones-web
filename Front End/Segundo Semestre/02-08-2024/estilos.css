@@ -118,7 +118,7 @@ header{
 }
 
 .default,.defaultL,.defaultR{
-    display: none !important;
+    display: none;
 }
 
 .showL,.showR{
@@ -168,6 +168,12 @@ header{
 /*-------------------------------------*/
 
 @media (min-width: 768px) {
+    #navigationButtonContainer{
+        display: none;
+    }
+    .default{
+        display: grid;
+    }
     #carritoContenedor{
         width: 50px;
         height: 50px;
@@ -177,5 +183,15 @@ header{
     #carritoImagen {
         width: 42px;
         margin-top: 4px;
+    }
+
+    .cat{
+        text-align: center;
+        align-content: center;
+        height: 50px;
+        width: 60%;
+        margin: auto;
+        background-color: #ff1a767b;
+        border-radius: 20%;
     }
 }
