@@ -100,8 +100,6 @@ eliminarButton.addEventListener("click", function(){
     let notaMap = datos.get(nombre);
     console.log(datos);
 
-    mapCont = "";
-
     let verifNombre = nombre[0] === " ";
     let verifNombre1 = nombre.length < 2;
     if (verifNombre){
@@ -112,10 +110,6 @@ eliminarButton.addEventListener("click", function(){
         window.alert("Retirando de la lista al estudiante " + nombre + ", con la nota " + notaMap + ".");
 
         datos.delete(nombre);
-
-        datos.forEach((nota, nombre) => {
-            mapCont += `Nombre: ${nombre}, Nota: ${nota}\n`;
-        });
     } else {
         window.alert("Ese estudiante no estaba en la lista.");
     }
