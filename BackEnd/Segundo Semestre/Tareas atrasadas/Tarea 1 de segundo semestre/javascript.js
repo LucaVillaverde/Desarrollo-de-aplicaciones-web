@@ -45,7 +45,7 @@ function lista(){
         window.alert("No hay contenido en la lista");
     } else {
         console.log(datos);
-        // window.alert(mapCont);
+        alert(mapCont);
     }
 
 }
@@ -53,8 +53,17 @@ function lista(){
 addButton.addEventListener("click", function(){
     let nota = document.getElementById("calificación").value;
     let nombre = document.getElementById("nombre").value;
-    añadir(nombre, nota);
-    console.log(datos);
+    let verifNombre = nombre[0] === " ";
+    let verifNombre1 = nombre.length < 2;
+    let verifNota = !isNaN(nota) && nota < 1;
+    if (verifNombre || verifNota){
+        window.alert("Verifica que lo ingresado en el apartado estudiante no contenga espacios al principio y que este bien la nota");
+    } else if (verifNombre1) {
+        window.alert("Todo el mundo sabe que no existe un nombre y apellidos tan cortos, favor de escribir bien.");
+    } else {
+        añadir(nombre, nota);
+        console.log(datos);
+    }
 });
 
 averageButton.addEventListener("click", function(){
@@ -62,29 +71,39 @@ averageButton.addEventListener("click", function(){
 });
 
 listaButton.addEventListener("click", function(){
-    lista();
     mapCont = "";
     datos.forEach((nota, nombre) => {
         console.log(`${nombre}: ${nota}`);
         console.log("Agregando a (" + `${nombre}: ${nota}` + ") a la lista de texto");
         mapCont += `Nombre: ${nombre}, Nota: ${nota}\n`;
     });
-    alert(mapCont);
+    lista();
 });
 
 eliminarButton.addEventListener("click", function(){
     let nombre = document.getElementById("nombre").value;
     let nota = document.getElementById("calificación").value;
-    datos.delete(nombre);
     console.log(datos);
 
     mapCont = "";
 
-    window.alert("Retirando de la lista al estudiante " + nombre + ", con la nota " + nota + ".");
+    let verifNombre = nombre[0] === " ";
+    let verifNombre1 = nombre.length < 2;
+    if (verifNombre){
+        window.alert("Verifica que lo ingresado en el apartado estudiante no contenga espacios al principio");
+    } else if (verifNombre1) {
+        window.alert("Todo el mundo sabe que no existe un nombre y apellidos tan cortos, favor de escribir bien.");
+    } else if (datos.has(nombre)){
+        window.alert("Retirando de la lista al estudiante " + nombre + ", con la nota " + nota + ".");
 
-    datos.forEach((nota, nombre) => {
-        mapCont += `Nombre: ${nombre}, Nota: ${nota}\n`;
-    });
+        datos.delete(nombre);
+
+        datos.forEach((nota, nombre) => {
+            mapCont += `Nombre: ${nombre}, Nota: ${nota}\n`;
+        });
+    } else {
+        window.alert("Ese estudiante no estaba en la lista.");
+    }
 
     // const [name, valor] = line.split(':').map(part => part.trim());
     // datos.has(name)
