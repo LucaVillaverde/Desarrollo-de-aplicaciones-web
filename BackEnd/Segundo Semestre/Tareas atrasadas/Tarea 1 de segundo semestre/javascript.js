@@ -75,6 +75,8 @@ addButton.addEventListener("click", function(){
         window.alert("la nota que estas queriendo ingresar no es valida.")
     } else if (verifNombre1) {
         window.alert("Todo el mundo sabe que no existe un nombre y apellidos tan cortos, favor de escribir bien.");
+    } else if (nombre.endsWith(" ")){
+        window.alert("Ojo los espacios al final del campo estudiante...");
     } else {
         añadir(nombre, nota);
         console.log(datos);
