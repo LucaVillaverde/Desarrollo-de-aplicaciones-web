@@ -14,13 +14,17 @@
     Luego, deberá implementa una función llamada "promedio" que calcule el promedio de todas las calificaciones ingresadas. -->
     
     <label class="margin" for="nombre">Estudiante:</label>
-    <input class="margin" type="text" name="nombre" id="nombre">
+    <input class="margin" type="text" name="nombre" id="nombre" required>
     <br> <br>
     <label for="calificación">Nota:</label>
-    <input type="number" name="calificación" id="calificación">
+    <input type="number" min="1" max="12" name="calificación" id="calificación">
     <br> <br>
     <input type="button" id="agregar" value="agregar">
+    <input type="button" id="eliminar" value="eliminar">
+    <br>
     <input type="button" id="promedio" value="promedio">
     <input type="button" id="lista" value="lista">
+    <br>
+    <h1>Al usar la opción "Eliminar" tenga en cuenta que solo se toma en consideración el Nombre que se ingreso previamente al sistema.</h1>
 </body>
 </html>
